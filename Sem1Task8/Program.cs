@@ -4,7 +4,14 @@ Console.WriteLine("Enter a number: ");
 int numN = int.Parse(Console.ReadLine()??"0");
 int evNumN = numN - (numN - 1);
 
-while (evNumN < numN)
+if (numN == 1)
+{
+    Console.WriteLine("Please choose a greater number");
+}
+
+else
+{
+    while (evNumN < numN)
 {
     if (evNumN % 2 == 0)
     {
@@ -20,4 +27,6 @@ while (evNumN < numN)
 if (numN % 2 == 0)
 {
     Console.Write(numN);
+}
+
 }
